@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import lt from "../../assets/img/1.png"
+import bl from "../../assets/img/2.png"
+import br from "../../assets/img/3.png"
+---
+<section class="w-full bg-[#112] flex flex-col justify-center items-center py-24 relative overflow-hidden" >
+    <Image src={lt} alt="Imagen izquierda superior" class="hidden md:flex absolute w-72 h-72 object-cover -left-16 -top-16 animate-spin" style="animation-duration: 18s;" />
+    <Image src={lt} alt="Imagen izquierda superior" class="absolute w-72 h-72 object-cover -right-16 -top-16 animate-spin" style="animation-duration: 18s;" />
+    <Image src={bl} alt="Imagen izquierda superior" class="absolute w-56 h-56 object-cover -left-16 -bottom-16 animate-spin z-10" style="animation-duration: 18s;" />
+    <Image src={br} alt="Imagen izquierda superior" class="absolute w-56 h-56 object-cover -right-16 -bottom-16 animate-spin z-10" style="animation-duration: 18s;" />
+    <div class="relative w-[90%] mx-auto bg-transparent text-slate-100 md:h-screen md:w-[50%] md:flex md:flex-col md:justify-center " >
+        <div class="absolute transform -translate-y-1/4 w-[450px] h-[400px] bg-gradient-to-r from-pink-300/70 via-purple-200/60 to-blue-300/70 rounded-full blur-3xl">
+            <!-- La mancha flotante -->
+        </div>
+        <p class="text-lg text-center font-bold"> 
+            <span class="py-1 px-2 bg-gradient-to-r from-purple-500 to-pink-400 rounded-2xl">* WHITE GLOBAL</span> 
+        </p>
+        <h2 class="text-4xl font-bold text-center my-12 md:text-6xl" >
+            Tu Éxito No Será <span class="text-pink-300" >Casualidad</span>
+            Será Nuestro Trabajo 🔥🌍
+        </h2>
+        <p class="text-xl text-center font-bold my-12" >
+            Cuando trabajas con nosotros, no solo obtienes un sitio web, obtienes una herramienta estratégica que posiciona tu marca como un referente global. 🌎💎
+        </p>
+        <form action="POST" class="flex flex-col gap-4 justify-center md:flex-row" >
+            <input type="email" placeholder="Type your email to get access" class="py-3 rounded-xl md:w-2/3" >
+            <button type="submit" class="bg-blue-600 py-3 rounded-xl font-bold md:w-1/3 hover:bg-blue-400 transition-all" >
+                SUSCRIBETE
+            </button>
+        </form>
+    </div>
+</section>
