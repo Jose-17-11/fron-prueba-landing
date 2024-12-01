@@ -4,9 +4,12 @@ import About from '../components/sections/About.astro';
 ---
 <Layout title="whiteglobalmarketing" >
  	<header class="py-8 bg-white" ></header>
-	 <section> 
-		 <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.46/build/spline-viewer.js"></script>
-		 <spline-viewer url="https://prod.spline.design/pk6xwUQByfu2pLTc/scene.splinecode"></spline-viewer>
+	 <section class="relative" > 
+		<div class="absolute w-1/2 h-full transform translate-x-1/2 -translate-y-1/2 z-40 flex justify-center items-end" >
+			<h2 class="text-6xl text-center z-40 text-white py-2 px-4 rounded-2xl bg-gradient-to-r from-blue-500 to-pink-400 font-bold shadow-2xl shadow-black" >Surf Web pruebas</h2>
+		</div>
+		<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.46/build/spline-viewer.js"></script>
+		<spline-viewer url="https://prod.spline.design/pk6xwUQByfu2pLTc/scene.splinecode"></spline-viewer>
 	 </section>
 	<About />
 </Layout>
